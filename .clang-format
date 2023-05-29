@@ -1,0 +1,56 @@
+# Base style
+# see https://clang.llvm.org/docs/ClangFormatStyleOptions.html for options
+BasedOnStyle: LLVM
+
+# Customizations
+UseTab: Never
+IndentWidth: 3
+TabWidth: 3
+IndentAccessModifiers: true
+FixNamespaceComments: true
+NamespaceIndentation: Inner
+SpaceBeforeInheritanceColon: true
+AllowShortIfStatementsOnASingleLine: false
+SeparateDefinitionBlocks: Always
+SortIncludes: CaseSensitive
+ColumnLimit: 100
+
+# Spaces with parentheses, brackets and angles
+SpaceInEmptyParentheses: false
+SpaceBeforeParens: Always
+SpacesInConditionalStatement: true
+SpacesInContainerLiterals: true
+SpacesInParentheses: true
+SpacesInSquareBrackets: true
+SpacesInAngles: Always
+
+# Brace Wrapping
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  BeforeLambdaBody: false
+  AfterNamespace: false
+  # Control Statements
+  AfterControlStatement: true
+  BeforeElse: true
+  BeforeWhile: true
+  # Types
+  AfterEnum: true
+  AfterClass: true
+  AfterStruct: true
+  AfterUnion: true
+  # Exceptions
+  BeforeCatch: true
+  # Empty constructs
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+AllowShortFunctionsOnASingleLine: None
+BreakConstructorInitializers: BeforeComma
+
+# Alignment
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: Consecutive
